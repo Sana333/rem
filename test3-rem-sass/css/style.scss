@@ -1,0 +1,713 @@
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+@font-face {
+  font-family: "RobotoLight";
+  src: url("../fonts/RobotoLight/RobotoLight.eot");
+  src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+@font-face {
+  font-family: "RobotoMedium";
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"), url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+@font-face {
+  font-family: "RobotoBold";
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+$main-font-family: "RobotoRegular";
+
+* {
+  font-family: $main-font-family;
+  /*этот стиль применится для всех элементов*/
+  box-sizing: border-box;
+  /*блок остаётся в своих размерах, а паддинги расчитываются внутри*/
+  margin: 0;
+  /*обнуляем отступы, т.к. в разных браузерах они разные изначально.*/
+  padding: 0;
+}
+
+$headersColor: #4f81bd;
+$APCPMColor: #ff0000;
+$lineColor: #ff6264;
+$myColor3: #fff;
+$navColor: #4f81bd;
+$navColorHover: #365882;
+$textColor: #4f81bd;
+$targetAPCMP: #ff6264;
+$addBorderColor: #5286c5;
+$addColor: #ff6264;
+$targetText: #5286c5;
+$assotiationText: #4671a7;
+$dateColor: #365882;
+$footerColor: #4f81bd;
+$addressColor: #5285c3;
+$nameColor: #365882;
+$jobTitleColor: #5285c3;
+$republicColor: #365882;
+$activeNameColor: #365882;
+$activeJobTitle: #5285c3;
+$activeRepublic: #365882;
+
+  /*  $font-size: 14px;  */
+$font-size: 0.875rem;
+$font-family: "RobotoLight";
+
+@mixin box_shadow {
+  box-shadow: 0 0 10px #bababa;
+}
+%association {
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+h2 {
+  text-align: center;
+  color: $headersColor;
+  padding-top: 6.25rem;
+}
+
+.body {
+  background-color: $myColor3;
+  /*  width: 1000px; */
+  width: 62.5rem;;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+ /* padding-top: 200px;  */
+  padding-top: 12.5rem;
+  /*   border: 1px solid red;  */
+}
+
+header {
+  position: fixed;
+  top: 0;
+  padding-left: 11.25rem;
+/*  width: 1000px; */
+  width: 62.5rem;;
+ /* padding-top: 40px;  */
+  padding-top: 2.5rem;
+/*  height: 107px;  */
+  height: 6.69rem;
+  background: $myColor3;
+  opacity: 0.9;
+  z-index: 10;
+}
+
+.logo {
+  position: absolute;
+ /* left: 10px;  */
+  left: 0.63rem;
+ /*top: 15px;   */
+  top: 0.94rem;
+/*  width: 180px;  */
+  width: 9.5rem;
+  a img {
+/*    width: 120px;  */
+    width: 7.5rem;
+    height: auto;
+  }
+}
+
+.top-menu {
+  vertical-align: middle;
+  list-style-type: none;
+  background-color: white;
+  text-align: right;
+ /* padding-top: 10px;  */
+  padding-top: 0.63rem;
+  nav a {
+    font-size: $font-size+0.125;
+    font-weight: bold;
+    text-decoration: none;
+    color: $navColor;
+    display: inline-block;
+  /*  margin-left: 25px;  */
+    margin-left: 1.56rem;
+  /*  min-width: 120px;  */
+    min-width: 7.5rem;
+    text-align: center;
+    font-family: $font-family;
+    &:hover {
+      display: inline-block;
+      font-weight: bold;
+      color: $navColorHover;
+   /*   border-bottom: 2px solid $APCPMColor;  */
+      border-bottom: 0.125rem solid $APCPMColor;
+      /*bottom: -1px;*/
+    }
+  }
+}
+
+.big-div {
+  margin: 0 auto;
+ /* width: 750px;  */
+  width: 46.9rem;
+  position: relative;
+}
+
+.text-title {
+  width: 60%;
+}
+
+.img-title {
+  width: 40%;
+/*  padding-top: 60px;  */
+  padding-top: 3.75rem;
+  color: #acadae;
+}
+
+.small-div {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  h1 {
+    color: $APCPMColor;
+    font-size: $font-size+5.4;
+  }
+  .add {
+    width: 18.75rem;
+    height: 3.75rem;
+    line-height: 3.63rem;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid $addBorderColor;
+    color: $addColor;
+    text-decoration: none;
+    font-size: $font-size+0.44;
+    margin-top: $font-size+1;
+    &:hover {
+      color: $APCPMColor;
+    }
+  }
+  p {
+    display: inline-block;
+    font-size: $font-size+0.375;
+    color: $assotiationText;
+    line-height: 1.88rem;
+    &.goal {
+      font-size: $font-size+0.25;
+      color: $targetText;
+      line-height: 1.88rem;
+      margin-top: 3.125rem;
+      font-family: $font-family;
+      span {
+        color: $targetAPCMP;
+        font-size: $font-size+0.375;
+        letter-spacing: -0.019rem;
+        line-height: 1.875rem;
+      }
+    }
+  }
+  img {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+/*
+.small-div div{
+    background-image: url("img/Bitmap.png");
+}
+*/
+
+.line {
+  width: 15.625rem;
+  height: 0.0625rem;
+  background-color: $lineColor;
+  margin: 6.25rem auto 0 auto;
+}
+
+.target {
+  display: block;
+  width: 18.875rem;
+  height: 3.75rem;
+  color: #747474;
+  font-size: $font-size - 0.125;
+  margin-top: 1.875rem;
+}
+
+.span {
+  color: $targetAPCMP;
+}
+
+.bitmap img {
+  display: inline-block;
+  width: 20.5rem;
+  height: 12.5rem;
+  position: relative;
+  left: 3.125rem;
+  top: 11.125rem;
+}
+
+.history {
+  color: $APCPMColor;
+  font-size: $font-size+16;
+  line-height: 2.5rem;
+  letter-spacing: -0.03;
+  text-align: center;
+}
+
+.history_div {
+  display: table;
+  width: 53.13rem;
+  height: 22.5rem;
+  /*box-shadow: 0 0 10px #bababa;*/
+  @include box_shadow;
+  padding: 3.75rem;
+  margin: 3.75rem auto;
+}
+
+.history_p {
+  display: table-cell;
+  width: 11.25rem;
+  color: $textColor;
+  font-size: $font-size;
+  letter-spacing: -0.0125rem;
+  position: relative;
+  vertical-align: top;
+  .date1 {
+    padding-top: 4.25rem;
+    font-weight: bold;
+  }
+  .date2 {
+    padding-top: 3.625rem;
+    font-weight: bold;
+  }
+  .date3 {
+    padding-top: 3.125rem;
+    font-weight: bold;
+  }
+}
+
+.history_2p {
+  .descr1 {
+    padding-top: 4.25rem;
+  }
+  .descr2 {
+    padding-top: 1.25rem;
+  }
+  .descr3 {
+    padding-top: 3.125rem;
+  }
+}
+
+.img {
+  display: table-cell;
+  width: 95px;
+  background: url("../img/Stetoscope.png") no-repeat;
+  position: relative;
+  vertical-align: top;
+}
+.red{
+  color: $APCPMColor;
+}
+.history_2p {
+  display: table-cell;
+  color: $textColor;
+  font-size: $font-size;
+  letter-spacing: -0.0125rem;
+  position: relative;
+  vertical-align: top;
+}
+
+.karusel {
+  width: 56.25rem;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 2.5rem;
+  a {
+    display: inline-block;
+    color: $targetAPCMP;
+    font-size: $font-size+1.625rem;
+    text-decoration: none;
+    font-weight: bold;
+    vertical-align: 50%;
+  }
+  div {
+    display: inline-block;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+  }
+}
+
+.karusel_img img {
+  display: inline-block;
+  width: 9.125rem;
+  height: 6.187rem;
+}
+
+.founders {
+  display: table;
+  margin: 3.75rem auto;
+  width: 62.5rem;
+}
+
+.association {
+  display: inline-block;
+  width: 50%;
+  padding: 2.5rem;
+  height: 28.13rem;
+  /* box-shadow: 0 0 10px #bababa; */
+  @include box_shadow;
+  z-index: 2;
+  vertical-align: top;
+  ul {
+    display: inline-block;
+    color: $textColor;
+    letter-spacing: -0.0125rem;
+    position: relative;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+    padding-left: 4.31rem;
+    height: 3.06rem;
+    line-height: 3.06rem;
+    margin-bottom: 0.94rem;
+    font-size: $font-size - 0.0625;
+  }
+  .association1 {
+    background-image: url(../img/logo_association1.png);
+    @extend %association;
+  }
+  .association2 {
+    background-image: url(../img/logo_association2.png);
+    @extend %association;
+  }
+  .association3 {
+    background-image: url(../img/logo_association3.png);
+    @extend %association;
+  }
+  .association4 {
+    background-image: url(../img/logo_association4.png);
+    @extend %association;
+  }
+}
+
+.addition {
+  padding-top: 1.56rem;
+  p {
+    display: inline-block;
+    color: $textColor;
+    font-size: $font-size - 0.0625;
+    letter-spacing: -0.0125rem;
+    vertical-align: top;
+  }
+}
+
+.add-text {
+  display: inline-block;
+  width: 4.31rem;
+  color: $APCPMColor;
+  font-size: $font-size - 0.0652;
+  vertical-align: top;
+  position: relative;
+  font-weight: bold;
+}
+
+/*
+.association p:before{
+    content: 'А ТАКЖЕ';
+    color: #5fc8c3;
+    font-size: 15px;
+}
+*/
+
+.imagine {
+  display: inline-block;
+  height: 28.13rem;
+  width: 50%;
+  background: url("../img/doctors.png") right no-repeat;
+  text-align: right;
+  z-index: 1;
+}
+
+.karusel_2 {
+  &.center {
+    width: auto;
+    display: block;
+    > div {
+      display: block;
+      width: auto;
+    }
+  }
+  display: table;
+  width: 62.5rem;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 2.5rem;
+  /*padding-bottom: 40px;*/
+  > div {
+    display: table-cell;
+    width: 10.625rem;
+    height: auto;
+  }
+  .img2.active, &.center .slick-center .img2 {
+    width: auto;
+    position: relative;
+    opacity: 1;
+    padding-top: 0;
+  }
+  .img2.active img, &.center .slick-center .img2 img {
+    width: 9.38rem;
+  }
+  a {
+    display: inline-block;
+    color: $targetAPCMP;
+    font-size: $font-size + 1.625;
+    text-decoration: none;
+    font-weight: bold;
+    vertical-align: 50%;
+  }
+  .down-click, .next-click {
+    position: absolute;
+    font-weight: normal;
+  }
+  .down-click {
+    left: 0.75rem;
+    top: 8.25rem;
+  }
+  .next-click {
+    right: 0.75rem;
+    top: 8.25rem;
+  }
+  .img2 {
+    img {
+      display: inline-block;
+      width: 6.25rem;
+      height: auto;
+      border-radius: 6.9rem;
+      /*  display: none;  ------------------------------------*/
+    }
+    opacity: 0.7;
+    padding-top: 2.5rem;
+    .job-title {
+      padding-top: 0.625rem;
+    }
+    .republic {
+      padding-top: 0.5rem;
+    }
+  }
+}
+
+div {
+  &.img2 p {
+    font-size: $font-size;
+    line-height: 1.19rem;
+    letter-spacing: -0.0125rem;
+    color: $jobTitleColor;
+    font-weight: bold;
+    &.name {
+      font-size: $font-size;
+      line-height: 1.19rem;
+      letter-spacing: -0.0125rem;
+      color: $nameColor;
+      font-weight: bold;
+      padding-top: 30px;
+    }
+    &.republic {
+      font-size: $font-size - 1;
+      line-height: 1.875rem;
+      letter-spacing: -0.2px;
+      color: $republicColor;
+      font-weight: normal;
+    }
+  }
+  &.active p.name, &.slick-center p.name {
+    font-size: $font-size + 0.625;
+    font-weight: bold;
+    line-height: 1.81rem;
+    letter-spacing: -0.0125rem;
+    color: $activeNameColor;
+    padding-top: 1.875rem;
+  }
+  &.active p.job-title, &.slick-center p.job-title {
+    font-size: $font-size + 0.125;
+    font-weight: bold;
+    line-height: 1.81rem;
+    letter-spacing: -0.0125rem;
+    color: $activeJobTitle;
+    padding-top: 0.94rem !important;
+  }
+  &.active p.republic, &.slick-center p.republic {
+    font-size: $font-size + 0.125;
+    line-height: 2.81rem;
+    letter-spacing: -0.0125rem;
+    color: $activeRepublic;
+    padding-top: 0 !important;
+  }
+}
+
+.big_div {
+  width: 37.5rem;
+  margin: 0 auto;
+  margin-top: 3.75rem;
+}
+
+.small_div {
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+  text-align: center;
+}
+
+.small2_div {
+  display: inline-block;
+  width: 75%;
+  vertical-align: top;
+}
+
+.small_div {
+  span {
+    font-size: $font-size + 3.125;
+    font-weight: bold;
+    color: $dateColor;
+    letter-spacing: -0.031rem;
+    position: relative;
+    line-height: 3.375rem;
+  }
+  .month {
+    font-size: $font-size;
+    font-weight: bold;
+    color: $textColor;
+    letter-spacing: -0.031rem;
+    position: relative;
+    padding-top: 1.25rem;
+  }
+  span.two {
+    display: inline-block;
+    font-size: $font-size + 3;
+    font-weight: bold;
+    color: #74d0cb;
+    letter-spacing: -0.031;
+    text-align: center;
+  }
+}
+
+.small2_div {
+  p {
+    display: inline-block;
+    font-size: $font-size;
+    color: $textColor;
+    letter-spacing: -0.031rem;
+    line-height: 1.25rem;
+    vertical-align: top;
+  }
+  address {
+    font-size: $font-size;
+    color: $addressColor;
+    letter-spacing: -0.031;
+    line-height: 1.25rem;
+    font-family: $font-family;
+    font-style: normal;
+    padding-top: 0.94rem;
+  }
+}
+
+.map {
+  width: 62.5rem;
+  height: 34.4rem;
+  background: url("../img/map.png") no-repeat;
+  margin-top: 7.5rem;
+  text-align: center;
+}
+
+.map_div {
+  width: 29.4rem;
+  /* box-shadow: 0 0 10px #bababa; */
+  @include box_shadow;
+  background-color: white;
+  padding: 2.19rem 2.5rem;
+  margin: 0 auto;
+  position: relative;
+  text-align: left;
+  address {
+    padding-top: 1.86rem;
+    ul {
+      list-style: none;
+      li {
+        font-size: $font-size - 0.063;
+        color: $textColor;
+        font-style: normal;
+        padding-bottom: 0.625rem;
+        &:last-child {
+          padding-bottom: 0;
+        }
+        i {
+          display: inline-block;
+          padding-right: 1.875rem;
+        }
+      }
+    }
+  }
+}
+
+.map h2 {
+  color: $headersColor;
+  font-size: $font-size + 0.875rem;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+  display: inline-block;
+  margin-left: -20.63rem;
+}
+
+.map_div p {
+  font-size: $font-size - 0.0625;
+  line-height: 1.25rem;
+  color: $textColor;
+  padding-bottom: 0.625rem;
+}
+
+footer {
+  height: 3.125rem;
+  line-height: 3.125rem;
+  background-color: $footerColor;
+  color: white;
+  text-align: right;
+  padding-right: 4.38rem;
+  p {
+    font-size: $font-size;
+  }
+}
+
+a {
+  outline: none;
+  /*одновременно устанавливает цвет, стиль и толщину внешней границы на всех четырех сторонах элемента.*/
+}
+
+div#wrap {
+  display: block;
+  width: 41.31rem;
+  height: 8rem;
+  margin: 3.125rem auto;
+}
+
+a.gallery2 img {
+  border: 0.0625rem solid #CCC;
+  padding: 0.125rem;
+  margin: 0.625rem 0.31rem 10.625rem 0;
+}
+
+div#fancy_loading ~ div#fancy_outer {
+  z-index: 41;
+}
