@@ -135,7 +135,7 @@ header {
     line-height: 3.63rem;
     text-align: center;
     display: inline-block;
-    border: 2px solid #5286c5;
+    border: 0.125rem solid #5286c5;
     color: #ff6264;
     text-decoration: none;
     font-size: 1.315rem;
@@ -196,7 +196,7 @@ header {
   color: #ff0000;
   font-size: 16.875rem;
   line-height: 2.5rem;
-  letter-spacing: -0.03;
+  letter-spacing: -0.03rem;
   text-align: center; }
 
 .history_div {
@@ -204,7 +204,7 @@ header {
   width: 53.13rem;
   height: 22.5rem;
   /*box-shadow: 0 0 10px #bababa;*/
-  box-shadow: 0 0 10px #bababa;
+  box-shadow: 0 0 0.625rem #bababa;
   padding: 3.75rem;
   margin: 3.75rem auto; }
 
@@ -235,7 +235,7 @@ header {
 
 .img {
   display: table-cell;
-  width: 95px;
+  width: 5.94rem;
   background: url("../img/Stetoscope.png") no-repeat;
   position: relative;
   vertical-align: top; }
@@ -285,7 +285,7 @@ header {
   padding: 2.5rem;
   height: 28.13rem;
   /* box-shadow: 0 0 10px #bababa; */
-  box-shadow: 0 0 10px #bababa;
+  box-shadow: 0 0 0.625rem #bababa;
   z-index: 2;
   vertical-align: top; }
   .association ul {
@@ -409,11 +409,11 @@ div.img2 p {
     letter-spacing: -0.0125rem;
     color: #365882;
     font-weight: bold;
-    padding-top: 30px; }
+    padding-top: 1.9rem; }
   div.img2 p.republic {
-    font-size: -0.125rem;
+    font-size: 0.875rem, 625;
     line-height: 1.875rem;
-    letter-spacing: -0.2px;
+    letter-spacing: -0.0125rem;
     color: #365882;
     font-weight: normal; }
 div.active p.name, div.slick-center p.name {
@@ -472,7 +472,7 @@ div.active p.republic, div.slick-center p.republic {
   font-size: 3.875rem;
   font-weight: bold;
   color: #74d0cb;
-  letter-spacing: -0.031;
+  letter-spacing: -0.031rem;
   text-align: center; }
 
 .small2_div p {
@@ -485,7 +485,7 @@ div.active p.republic, div.slick-center p.republic {
 .small2_div address {
   font-size: 0.875rem;
   color: #5285c3;
-  letter-spacing: -0.031;
+  letter-spacing: -0.031rem;
   line-height: 1.25rem;
   font-family: "RobotoLight";
   font-style: normal;
@@ -501,7 +501,7 @@ div.active p.republic, div.slick-center p.republic {
 .map_div {
   width: 29.4rem;
   /* box-shadow: 0 0 10px #bababa; */
-  box-shadow: 0 0 10px #bababa;
+  box-shadow: 0 0 0.625rem #bababa;
   background-color: white;
   padding: 2.19rem 2.5rem;
   margin: 0 auto;
